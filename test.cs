@@ -5,16 +5,16 @@ using Microsoft.Extensions.Logging;
 
 namespace azure.function
 {
-    public class formfunction
+    public class test
     {
         private readonly ILogger _logger;
 
-        public formfunction(ILoggerFactory loggerFactory)
+        public test(ILoggerFactory loggerFactory)
         {
-            _logger = loggerFactory.CreateLogger<formfunction>();
+            _logger = loggerFactory.CreateLogger<test>();
         }
 
-        [Function("formfunction")]
+        [Function("test")]
         public HttpResponseData Run([HttpTrigger(AuthorizationLevel.Anonymous, "get", "post")] HttpRequestData req)
         {
             _logger.LogInformation("C# HTTP trigger function processed a request.");

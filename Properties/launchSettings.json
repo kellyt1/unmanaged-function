@@ -2,7 +2,7 @@
   "profiles": {
     "formfunc": {
       "commandName": "Project",
-      "commandLineArgs": "--port 7291",
+      "commandLineArgs": "--port 7070",
       "launchBrowser": false
     }
   }
